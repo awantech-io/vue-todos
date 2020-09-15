@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <Todos />
-
+    <Todos v-bind:todos="todos"/>
   </div>
 </template>
 
@@ -29,7 +28,7 @@ export default {
           completed:false
         },
         {
-          id:1,
+          id:3,
           title:"Todo Three",
           completed:false
         }
@@ -40,7 +39,7 @@ export default {
 </script>
 
 <style>
-  * {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
